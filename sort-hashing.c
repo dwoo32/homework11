@@ -326,7 +326,7 @@ int hashing(int *a, int **ht)
 		hashtable = (int*)malloc(sizeof(int) * MAX_ARRAY_SIZE);//hashtable에 정수 크기만큼 MAX_ARRAY_SIZE만큼 메모리 할당
 		*ht = hashtable;  /* 할당된 메모리의 주소를 복사 --> main에서 배열을 control 할수 있도록 함*/
 	} else {
-		hashtable = *ht;	/* hash table이 NULL이 아닌경우, table 재활용, reset to -1 */
+		hashtable = *ht;	/* hash table이 NULL이 아닌경우, table 재활용, reset to -1  */
 	}
 
 	for(int i = 0; i < MAX_HASH_TABLE_SIZE; i++)
