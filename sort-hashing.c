@@ -230,7 +230,7 @@ int bubbleSort(int *a)
 
 	for(i = 0; i < MAX_ARRAY_SIZE; i++)
 	{
-		for (j = 0; j < MAX_ARRAY_SIZE; j++)
+		for (j = 1; j < MAX_ARRAY_SIZE; j++)
 		{
 			if (a[j-1] > a[j])//a[j-1]이 a[j]보다 크다면
 			{
